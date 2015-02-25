@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  .navbar.navbar-default.navbar-fixed-top
+    .container
+      .navbar-header
+        a.navbar-brand(href='#')
+          = title
+  .container
+    .page-header
+    nav.nav.navbar-inverse
+        .navbar-header
+          a.navbar-brand(href='#') Menu
+    .page-header
+      p Welcome to #{title}
